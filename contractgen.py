@@ -69,7 +69,7 @@ def getSystem(jumpsRoll):
 #	contractTerrain["Light Industrial","Urban","Use Primary","Roll on Primary"]
 #	terrainTypes["Desert","Wetlands","Light Industrial","Hills","Wooded","Grasslands","Savannahs","Urban","Mountains","Alien"]
 #	match systemIn:
-	
+
 # function to determine employer #
 def getEmployer():
 	employer = ""
@@ -181,15 +181,15 @@ def getContractLength(typeIn):
 
 # function to determine base pay #
 def getBasePay(employerType, missionIn):
-	payStepList = ["50% (1)", 
-				"55% (2)", 
+	payStepList = ["50% (1)",
+				"55% (2)",
 				"60% (3)",
 				"70% (4)",
 				"80% (5)",
 				"90% (6)",
 				"100% (7)",
 				"110% (8)",
-				"120 (9)",
+				"120% (9)",
 				"130% (10)",
 				"150% (11)",
 				"175% (12)",
@@ -231,14 +231,14 @@ def getBasePay(employerType, missionIn):
 	if stepRolled < 0:
 		stepRolled = 0
 	return payStepList[stepRolled]
-	
+
 # getBasePay ends #
 
 
 # function to determine support #
 def getSupportRate(employerType, missionIn):
 	supportStepList = ["None (1)",
-						"Straight/20% (2)", 
+						"Straight/20% (2)",
 						"Straight/40% (3)",
 						"Straight/60% (4)",
 						"Straight/80% (5)",
@@ -283,7 +283,7 @@ def getSupportRate(employerType, missionIn):
 # function to determine transport #
 def getTransportRate(employerType, missionIn):
 	transportStepList = ["0% (1)",
-						"0% (2)", 
+						"0% (2)",
 						"0% (3)",
 						"0% (4)",
 						"0% (5)",
@@ -322,11 +322,11 @@ def getTransportRate(employerType, missionIn):
 	if stepRolled < 0:
 		stepRolled = 0
 	return transportStepList[stepRolled]
-			
+
 # function to determine salvage rights #
 def getSalvageRights(employerType, missionIn):
 	salvageStepList = ["None (1)",
-						"Exchange (2)", 
+						"Exchange (2)",
 						"Exchange (3)",
 						"10% (4)",
 						"20% (5)",
@@ -375,7 +375,7 @@ def getSalvageRights(employerType, missionIn):
 # function to determine command rights #
 def getCommandRights(employerType, missionIn):
 	commandStepList = ["Integrated (1)",
-						"Integrated (2)", 
+						"Integrated (2)",
 						"Integrated (3)",
 						"House (4)",
 						"House (5)",
@@ -429,7 +429,7 @@ def getTrackNumber(missionTypeIn):
 						return 3
 					case _:
 						return 1
-		case "Garrison" | "Retainer"
+		case "Garrison" | "Retainer":
 				match roll:
 					case 2 | 3 | 4:
 						return 0
@@ -437,7 +437,7 @@ def getTrackNumber(missionTypeIn):
 						return 1
 					case 7 | 8:
 						return 2
-					case 9: 
+					case 9:
 						return 3
 					case 10:
 						return 4
@@ -452,11 +452,11 @@ def getTrackNumber(missionTypeIn):
 #	if missionTypeIn == "Raid":
 
 	#elif missionTypeIn == "Garrison":
-		
+
 	#elif missionTypeIn == "Expedition":
-		
+
 	#elif missionTypeIn == "Invasion":
-		
+
 	#elif missionTypeIn == "Retainer":
 
 # run main #
