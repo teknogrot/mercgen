@@ -29,7 +29,7 @@ def main(argv):
 	contractTransportation = getTransportRate(employer, contractMissionType)
 	print("Transportation: " + contractTransportation)
 	contractSalvage = getSalvageRights(employer, contractMissionType)
-	print("contractSalvage: " + contractSalvage)
+	print("Salvage: " + contractSalvage)
 	contractCommand = getCommandRights(employer, contractMissionType)
 	print("Command Rights: " + contractCommand)
 	sys.exit(0)
